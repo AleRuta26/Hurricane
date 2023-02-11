@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/AleRuta26/Hurricane#readme",
   "dependencies": {
+    "freezeframe": "^5.0.2",
     "graphql-request": "^5.1.0"
   }
 }
