@@ -2,7 +2,7 @@
   "name": "hurricane",
   "version": "1.0.0",
   "description": "A Sorare Bot",
-  "main": "script.js",
+  "main": "homepage.js",
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

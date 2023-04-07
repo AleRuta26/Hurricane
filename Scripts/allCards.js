@@ -21,6 +21,7 @@ const AllCardsFromUser = gql`
 
 const slug = "xaloc";
 
+
 async function main() {
   const graphQLClient = new GraphQLClient("https://api.sorare.com/graphql", {
     headers: {
@@ -41,7 +42,8 @@ async function main() {
     });
     cursor = paginatedCards["pageInfo"]["endCursor"];
   } while (cursor != null);
-  console.log(n);
+ 
 }
+
 
 main().catch((error) => console.error(error));
