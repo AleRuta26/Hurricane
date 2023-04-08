@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/AleRuta26/Hurricane#readme",
   "dependencies": {
+    "@sorare/actioncable": "^1.0.3",
     "freezeframe": "^5.0.2",
-    "graphql-request": "^5.1.0"
+    "graphql": "^16.6.0",
+    "graphql-request": "^5.1.0",
+    "websocket-client": "^1.0.0",
+    "yargs": "^17.7.1"
   }
 }
