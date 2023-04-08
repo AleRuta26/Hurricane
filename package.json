@@ -1,9 +1,8 @@
 {
   "name": "hurricane",
   "version": "1.0.0",
-  "description": "A Sorare Bot",
-  "main": "homepage.js",
-  "type": "commonjs",
+  "description": "This applications serves as a Sorare companion, helping the user manage their incomes/outcomes, their NBA and Football cards, and their auctions/listings.",
+  "main": "homePage.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/AleRuta26/Hurricane.git"
   },
-  "author": "Alessandro Ruta (Xaloc Viento)",
+  "author": "Xaloc Viento",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/AleRuta26/Hurricane/issues"
@@ -19,10 +18,9 @@
   "homepage": "https://github.com/AleRuta26/Hurricane#readme",
   "dependencies": {
     "@sorare/actioncable": "^1.0.3",
-    "freezeframe": "^5.0.2",
+    "crypto": "^1.0.1",
     "graphql": "^16.6.0",
-    "graphql-request": "^5.1.0",
-    "websocket-client": "^1.0.0",
+    "graphql-request": "^5.2.0",
     "yargs": "^17.7.1"
   }
 }
