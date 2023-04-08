@@ -14,7 +14,7 @@ const input = {
     "password" : "$2a$11$zh0JOQd4ugiJa/4ROvNWFuWRLfMHCcJPX0.QyJZpi3TyDan81SL8m"
 }
 
-
+var n;
 async function main() {
   const graphQLClient = new GraphQLClient("https://api.sorare.com/graphql", {
     headers: {
@@ -29,8 +29,13 @@ async function main() {
   });
   const currentUser = data["signIn"]["currentUser"];
   
-  console.log(currentUser);
-  var n = JSON.stringify(currentUser);
+  
+ cleanup(currentUser);
+
+}
+
+function cleanup(currentUser){
+  n = JSON.stringify(currentUser);
   n = n.replace('{', '');
   n = n.replace('}', '');
   n = n.replace('"', '');
@@ -40,14 +45,8 @@ async function main() {
   n = n.replace('"', '');
   n = n.replace('"', '');
   n = parseInt(n);
-  
-  
   n = n/1000000000000000000;
-  
   console.log(n);
-  
 }
-
-
 
 main().catch((error) => console.error(error));

@@ -4,14 +4,15 @@ const CardNumber = gql`
 query CardNumber($slug: String!) {
   user(slug: $slug) {
    cardCounts{
-    limited
+    limited #modificare per cambiare tipo carta
   }
   }
 }
 `;
+const tipo = 'limited'; //modificare per cambiare tipo di carta
 
 const slug = "xaloc";
-
+var cardNumber;
 
 async function main() {
   const graphQLClient = new GraphQLClient("https://api.sorare.com/graphql", {
@@ -26,11 +27,14 @@ async function main() {
     slug
   });
   const cardCounts = data["user"]["cardCounts"];
-  var cardNumber;
+  cleanup(cardCounts);
+}
+
+function cleanup(cardCounts){
   cardNumber = JSON.stringify(cardCounts);
   cardNumber = cardNumber.replace('{', '');
   cardNumber = cardNumber.replace('}', '');
-  cardNumber = cardNumber.replace('limited', '');
+  cardNumber = cardNumber.replace(tipo, '');
   cardNumber = cardNumber.replace(':', '');
   cardNumber = cardNumber.replace('"', '');
   cardNumber = cardNumber.replace('"', '');
