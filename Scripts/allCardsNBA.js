@@ -23,7 +23,7 @@ async function main() {
  
   const data = await graphQLClient.request(CardNumber, {
   });
-  const cardCounts = data["user"]["cardCounts"];
+  const cardCounts = data["user"]["currentSportsUser"];
   cleanup(cardCounts);
 }
 
