@@ -1,0 +1,28 @@
+{
+  "name": "hurricane-beta",
+  "version": "1.0.1",
+  "description": "A Sorare Beta Companion",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleRuta26/Hurricane-beta.git"
+  },
+  "author": "AleRuta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleRuta26/Hurricane-beta/issues"
+  },
+  "homepage": "https://github.com/AleRuta26/Hurricane-beta#readme",
+  "dependencies": {
+    "@sorare/actioncable": "^1.0.3",
+    "crypto": "^1.0.1",
+    "graphql": "^16.6.0",
+    "graphql-request": "^5.2.0",
+    "math": "^0.0.3",
+    "websocket-client": "^1.0.0",
+    "yargs": "^17.7.1"
+  }
+}
