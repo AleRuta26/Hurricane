@@ -22,5 +22,5 @@ async function main() {
   console.log(cards);
 }
 
-
+module.exports.main=main;
 main().catch((error) => console.error(error));

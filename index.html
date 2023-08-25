@@ -8,13 +8,21 @@
   <meta charset="utf-8" />
   <link rel="icon" href="./Assets/Hurricane Logo.png" type="image/x-icon">
   <link rel="stylesheet" href="HomeStyle.css">
+  <script>
+
+    function NBA() {
+      const ncardsNBA = 2;
+      document.getElementById("NCards").innerHTML = ncardsNBA;
+    }
+  </script>
 </head>
 
-<body>
+<body onload="NBA()">
   <!-- barra in alto -->
   <div id="top">
     <img src="./Assets/Hurricane Logo.png">
-    <button onclick="window.location.href='https://sorare.com/oauth/authorize?client_id=9VE0PbHhR-Z87fcDHlh9ZTP6YoyUw3ticjuculVHSJk&redirect_uri=https%3A%2F%2Faleruta26.github.io%2FHurricane&response_type=code&scope=email';">Login</button>
+    <button
+      onclick="window.location.href='https://sorare.com/oauth/authorize?client_id=9VE0PbHhR-Z87fcDHlh9ZTP6YoyUw3ticjuculVHSJk&redirect_uri=https%3A%2F%2Faleruta26.github.io%2FHurricane&response_type=code&scope=email';">Login</button>
   </div>
   <!-- finestra centrale -->
   <div id="blackboard">
@@ -29,7 +37,7 @@
         <p>Totale ETH Calcio</p>
       </li>
       <li class="right">
-        <p>Totale Carte NBA</p>
+        <p>Totale Carte NBA<span id="NCards"></span></p>
       </li>
       <li class="left">
         <p>Totale Carte</p>
@@ -44,4 +52,5 @@
     <h3>Hurricane</h3>
   </div>
 </body>
+
 </html>
