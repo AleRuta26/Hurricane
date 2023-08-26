@@ -9,15 +9,25 @@
   <link rel="icon" href="./Assets/Hurricane Logo.png" type="image/x-icon">
   <link rel="stylesheet" href="HomeStyle.css">
   <script>
-
-    function NBA() {
-      const ncardsNBA = 2;
-      document.getElementById("NCards").innerHTML = ncardsNBA;
+    function Queries() {
+      const eth = 2;
+      const ethNBA = 2;
+      const ethFB = 2;
+      const cards = 2;
+      const cardsNBA = 2;
+      const cardsFB = 2;
+      
+      document.getElementById("ETH").innerHTML = eth;
+      document.getElementById("ETHNBA").innerHTML = ethNBA;
+      document.getElementById("ETHFB").innerHTML = ethFB;
+      document.getElementById("Cards").innerHTML = cards;
+      document.getElementById("CardsNBA").innerHTML = cardsNBA;
+      document.getElementById("CardsFB").innerHTML = cardsFB;
     }
   </script>
 </head>
 
-<body onload="NBA()">
+<body onload="Queries()">
   <!-- barra in alto -->
   <div id="top">
     <img src="./Assets/Hurricane Logo.png">
@@ -29,21 +39,27 @@
     <ul>
       <li class="left">
         <p>Totale ETH</p>
+        <span id="ETH"></span>
       </li>
       <li class="right">
         <p>Totale ETH NBA</p>
+        <span id="ETHNBA"></span>
       </li>
       <li class="left">
         <p>Totale ETH Calcio</p>
+        <span id="ETHFB"></span>
       </li>
       <li class="right">
-        <p>Totale Carte NBA<span id="NCards"></span></p>
+        <p>Totale Carte NBA</p>
+        <span id="CardsNBA"></span>
       </li>
       <li class="left">
         <p>Totale Carte</p>
+        <span id="Cards"></span>
       </li>
       <li class="right">
         <p>Totale Carte Calcio</p>
+        <span id="CardsFB"></span>
       </li>
     </ul>
   </div>
