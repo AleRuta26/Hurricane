@@ -19,11 +19,11 @@ async function main() {
   const data = await graphQLClient.request(CardNumber, {
   });
   const cards = data["currentUser"]["cardCounts"];
-  console.log(cards);
+ 
 }
  
 
-module.exports.main = main;
+
 
 
 main().catch((error) => console.error(error));

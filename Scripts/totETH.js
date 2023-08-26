@@ -8,23 +8,17 @@ query totETH{
 }
 `;
 
+var ETH;
 
 async function main() {
   const graphQLClient = new GraphQLClient("https://api.sorare.com/federation/graphql", {
     headers: {
     },
   });
-
-
- 
   const data = await graphQLClient.request(totETH, {
-    input
   });
-  const ETH = data["currentUser"];
-  
-  
- console.log(ETH);
-
+  ETH = data["currentUser"];
+  console.log(ETH);
 }
 
 

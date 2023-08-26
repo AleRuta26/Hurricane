@@ -8,21 +8,15 @@
   <meta charset="utf-8" />
   <link rel="icon" href="./Assets/Hurricane Logo.png" type="image/x-icon">
   <link rel="stylesheet" href="HomeStyle.css">
-  <script>
-    function Queries() {
-      const eth = 2;
-      const ethNBA = 2;
-      const ethFB = 2;
-      const cards = 2;
-      const cardsNBA = 2;
-      const cardsFB = 2;
-      
-      document.getElementById("ETH").innerHTML = eth;
-      document.getElementById("ETHNBA").innerHTML = ethNBA;
-      document.getElementById("ETHFB").innerHTML = ethFB;
-      document.getElementById("Cards").innerHTML = cards;
-      document.getElementById("CardsNBA").innerHTML = cardsNBA;
-      document.getElementById("CardsFB").innerHTML = cardsFB;
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript">
+    function Queries() {   
+      document.getElementById("ETH").innerHTML = User.eth;
+      document.getElementById("ETHNBA").innerHTML = User.ethNBA;
+      document.getElementById("ETHFB").innerHTML = User.ethFB;
+      document.getElementById("Cards").innerHTML = User.cards;
+      document.getElementById("CardsNBA").innerHTML = User.cardsNBA;
+      document.getElementById("CardsFB").innerHTML = User.cardsFB;
     }
   </script>
 </head>
